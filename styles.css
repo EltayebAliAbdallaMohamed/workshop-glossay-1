@@ -1,0 +1,155 @@
+/* BASE PAGE STYLING */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  color: #333;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.file-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: #e8f4f8;
+  border-radius: 6px;
+  border: 2px solid #0078d4;
+  flex-wrap: wrap;
+}
+
+/* ================================
+   POWERPOINT-STYLE SLIDE DESIGN
+   ================================ */
+
+.ppt-slide {
+  width: 100%;
+  max-width: 900px;
+  min-height: 480px;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem auto 4rem auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeIn 0.4s ease;
+}
+
+.ppt-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0078d4;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ppt-content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-line;
+  margin-top: 1rem;
+}
+
+.ppt-image-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ppt-image-slide img {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  margin-top: 1rem;
+}
+
+/* ================================
+   PRESENTER NOTES PANEL
+   ================================ */
+
+.ppt-notes {
+  width: 100%;
+  max-width: 900px;
+  background: #fffbea;
+  border-left: 6px solid #f0c14b;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  display: none;
+}
+
+.ppt-notes-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #b58900;
+}
+
+/* ================================
+   NAVIGATION BUTTONS
+   ================================ */
+
+.controls {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 0.5rem;
+  border-top: 2px solid #eee;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background-color: #005fa3;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

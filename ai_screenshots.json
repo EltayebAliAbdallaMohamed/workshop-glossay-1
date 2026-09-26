@@ -1,0 +1,35 @@
+{
+  "topics": [
+    {
+      "id": "glossaryUsageKSU",
+      "title": "Screen shots",
+      "slides": [
+        {
+          "heading": "*collect → verb-noun-collocations",
+          "content": "",
+          "image": "collect_verb_ask_ChatGPT_1.png",
+          "notes": ""
+        },
+        {
+          "heading": "*collect → verb-noun-collocations",
+          "content": "",
+          "image": "collect_verb_ask_ChatGPT_2.png",
+          "notes": ""
+        },
+        {
+          "heading": "*hobby → verb-noun-collocations",
+          "content": "",
+          "image": "hobby_verb_ask_ChatGPT_1.png",
+          "notes": ""
+        },
+        {
+          "heading": "*hobby → verb-noun-collocations",
+          "content": "",
+          "image": "hobby_verb_ask_ChatGPT_2.png",
+          "notes": ""
+        }
+       
+      ]
+    }
+  ]
+}

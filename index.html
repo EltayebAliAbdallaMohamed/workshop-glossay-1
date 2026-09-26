@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Master</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body role="document">
+
+<main role="main" aria-label="Presentation player interface">
+
+  <!-- Topic selector -->
+  <div class="file-selector">
+    <label for="topicSelect" style="font-weight:bold;">Select Presentation Topic:</label>
+    <select id="topicSelect">
+      <option value="">-- Choose a topic --</option>
+    </select>
+  </div>
+
+  <h1 id="presentationTitle"></h1>
+
+  <div id="slideCounter"></div>
+
+  <!-- PowerPoint-style slide container -->
+  <section id="slideContainer" class="ppt-slide"></section>
+
+  <!-- Presenter Notes -->
+  <section id="notesContainer" class="ppt-notes"></section>
+
+  <!-- Navigation -->
+  <div class="controls">
+
+    <button id="prevSlide">◀ Previous</button>
+
+    <button id="speakSelection">🔊 Speak Selection</button>
+
+    <button id="nextSlide">Next ▶</button>
+
+    <!-- Go to Slide -->
+    <label for="slideNumber">Go to:</label>
+
+    <input
+      type="number"
+      id="slideNumber"
+      min="1"
+      max="99"
+      placeholder="#"
+      aria-label="Enter slide number"
+      style="width: 45px;"
+    >
+
+    <button id="goToSlide">Go</button>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    Created by <span>Eltayeb Mohamed</span> |
+    <span>© 2025</span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
